@@ -1,0 +1,10 @@
+site_name: pytest-doctest-ellipsis-markers
+site_description: Setup additional values for ELLIPSIS_MARKER for doctests
+site_author: Janusz Skonieczny
+
+theme: readthedocs
+
+repo_url: https://github.com/wooyek/pytest-doctest-ellipsis-markers
+
+pages:
+- Home: index.md
