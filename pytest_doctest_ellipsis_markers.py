@@ -12,9 +12,13 @@ def pytest_addoption(parser):
         action='store',
         dest='doctest_ellipsis_markers',
         default='',
-        help='Set additional value interpreted as ELLIPSIS_MARKER in expectations.'
+        help='Set additional value interpreted as '
+             'ELLIPSIS_MARKER in expectations.'
     )
-    parser.addini('doctest_ellipsis_markers', 'additional ELLIPSIS_MARKER replacements', type="args", default=['[...]', "'...'", '"..."'])
+    parser.addini(
+        'doctest_ellipsis_markers', 'additional ELLIPSIS_MARKER replacements',
+        type="args", default=['[...]', "'...'", '"..."']
+    )
 
 
 OutputChecker = doctest.OutputChecker
