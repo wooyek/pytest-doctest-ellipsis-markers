@@ -48,7 +48,14 @@ You can install "pytest-doctest-ellipsis-markers" via `pip`_ from `PyPI`_::
 Usage
 -----
 
-* TODO
+By default the markers below will be treated as ELLIPSIS_MARKER, to change them
+add `doctest_ellipsis_markers` to your `ini style configuration <https://docs.pytest.org/en/latest/customize.html>`_.
+
+.. code-block:: ini
+
+    [pytest]
+    doctest_ellipsis_markers = [...] '...' "..."
+
 
 Contributing
 ------------
