@@ -6,7 +6,7 @@ log = logging.getLogger(__name__)
 
 
 def pytest_addoption(parser):
-    group = parser.getgroup('docktest-ellipsis-markers')
+    group = parser.getgroup('doctest-ellipsis-markers')
     group.addoption(
         '--doctest-ellipsis-markers',
         action='store',
